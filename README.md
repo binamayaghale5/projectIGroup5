@@ -1,2 +1,0 @@
-# projectIGroup5
-projectForFirstSemester
