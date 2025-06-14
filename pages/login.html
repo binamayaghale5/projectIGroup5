@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Sahayatri</title>
-    <link rel="stylesheet" href="job sahayatri.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <div class="heading">
             <h1>Login Form</h1>
-    </div>
+        </div>
+
         <div class="input-type">
-            <input type="text" placeholder="Username" required><i class='bx bxs-user'></i>
+            <input type="text" id="username" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
         </div>
+
         <div class="input-type">
-            <input type="password" id="password" placeholder="Password" required><i class='bx bx-lock'></i>
+            <input type="password" id="password" placeholder="Password" required>
+            <i class='bx bx-lock'></i>
         </div>
-        <div class="input-type" >
-            <input type="email" name="Email"  id="email" placeholder="Email" required>
+
+        <div class="input-type">
+            <input type="email" id="email" placeholder="Email" required>
         </div>
+
         <div class="checkbox">
             <label>
-                <input type="checkbox">Remember me
+                <input type="checkbox"> Remember me
             </label>
             <a href="#">Forget password?</a>
         </div>
+
         <div class="submit">
-            <button style="color: black;" onclick="displayweb()">Sign Up</button>
+            <button id="signupBtn">Sign Up</button>
         </div>
+
         <div class="account">
-         <p>Don't have an account?
-         <a href="#">Register</a></p>
-
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
     </div>
-    <script src="project.js">
 
-    </script>
-    
+    <script src="/js/project.js"></script>
 </body>
 </html>

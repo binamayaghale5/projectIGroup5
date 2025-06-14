@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +10,18 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            
+
             <div class="logo">
                 <div class="logo-icon"> <img src="/imgs/ok.png" alt="logo">
                 Job Sahayatri
         </div></div>
-            
+
             <ul class="nav-menu">
                 <li class="home">
                     <a href="/pages/index.html">Home</a>
                 </li>
                 <li class="about">
-                    <a href="/pages/about.html">About</a>
+                    <a href="/pages/contact.html">About</a>
                 </li>
                 <li class="contact">
                     <a href="/pages/contact.html">Contact</a>
@@ -33,59 +32,74 @@
                 <li>
                     <input class="search" type="search" placeholder="search your dream job.....">
                 </li>
-                
+
                 <div class="nav-buttons">
                     <a href="/pages/login.html" class="signbutton">Sign Up</a>
                 </div>
             </ul>
 
-            
+
         </div>
     </nav>
 
+        <section class="hero">
+        <h1>Welcome to Job Sahayatri!</h1>
+        <p>Your journey to your dream job starts here. Find the perfect job and unlock your career potential.</p><br>
+        <a href="/pages/job.html" class="explorejob-button">Explore Jobs</a>
+    </section>
+<br>
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Wide range of job categories.</li>
+            <li>Easy and simple application process.</li>
+            <li>Trusted companies & verified jobs.</li>
+            <li>Personalized job recommendations.</li>
+        </ul>
+    </section>
+    <section class="available-jobs">
+    <h2>Top Jobs</h2>
+    <div class="job-grid">
+        <div class="job-card">
+            <img src="/imgs/doctor.png" alt="Doctor Logo">
+            <h3>Doctor</h3>
+            <p>City Hospital</p>
+            <p>Kathmandu</p>
+        </div>
 
-    <section class="contact-form-section">
-    <h2>Contact Us</h2>
-   <form onsubmit="alert('Form Submitted Successfully!'); return false;">
+        <div class="job-card">
+            <img src="/imgs/receptionist.png" alt="Receptionist Logo">
+            <h3>Receptionist</h3>
+            <p>Hotel Paradise</p>
+            <p>Pokhara</p>
+        </div>
 
-        
-    
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required> 
-        <br><br>
+        <div class="job-card">
+            <img src="/imgs/cashier.png" alt="Cashier Logo">
+            <h3>Cashier</h3>
+            <p>Everest Bank</p>
+            <p>Bhaktapur</p>
+        </div>
 
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required> 
-        <br><br>
+        <div class="job-card">
+            <img src="/imgs/accountant.png" alt="Accountant Logo">
+            <h3>Accountant</h3>
+            <p>ABC Firm</p>
+            <p>Butwal</p>
+        </div>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required> 
-        <br><br>
-
-        <label for="job-title">Job Title:</label>
-        <select id="job-title" name="job-title" required>
-            <option value="" disabled selected>Select your job title</option>
-            <option value="doctor">Doctor</option>
-            <option value="receptionist">Receptionist</option>
-            <option value="teacher">Teacher</option>
-            <option value="cashier">Cashier</option>
-            <option value="accountant">Accountant</option>
-        </select>
-        <br><br>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here..." required></textarea> 
-        <br><br>
-
-        
-        <input type="submit" value="Submit">
-
-    </form>
+        <div class="job-card">
+            <img src="/imgs/teacher.png" alt="Teacher Logo">
+            <h3>Teacher</h3>
+            <p>Malpi International School</p>
+            <p>Kathmandu</p>
+        </div>
+    </div>
 </section>
 
- <footer class="footer">
+<footer class="footer">
     <div class="footer-container">
-    
+
         <div class="footer-section">
             <h4>Contact Us:</h4>
             <ul>
@@ -115,6 +129,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>
