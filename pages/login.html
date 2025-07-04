@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="container">
         <div class="heading">
-            <h1>Login Form</h1>
+            <h1 id="formTitle">Sign Up</h1>
         </div>
 
         <div class="input-type">
@@ -23,7 +25,7 @@
             <i class='bx bx-lock'></i>
         </div>
 
-        <div class="input-type">
+        <div class="input-type" id="emailField">
             <input type="email" id="email" placeholder="Email" required>
         </div>
 
@@ -35,15 +37,19 @@
         </div>
 
         <div class="submit">
-            <button id="signupBtn">Sign Up</button>
+            <button id="submitBtn">Sign Up</button>
         </div>
 
         <div class="account">
-            <p>Don't have an account? <a href="#">Register</a></p>
+            <p id="toggleText">
+                Already have an account? <a href="#" id="toggleLink">Login</a>
+            </p>
         </div>
     </div>
 
-    <script src="/js/project.js"></script>
+    <script src="../backend/login.js">
+    </script>
+    <script src="../backend/navbar.js"></script>
 </body>
 
 </html>

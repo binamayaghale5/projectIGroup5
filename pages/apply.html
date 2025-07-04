@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Sahayatri - Find your Dream job</title>
+    <link rel="shortcut icon" href="/imgs/ok.png" type="image">
+    <!--for creating image/logo in the title inside head of website -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <div class="logo-icon"> <img src="/imgs/ok.png" alt="logo">
+                    Job Sahayatri
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="home">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="about">
+                    <a href="/pages/about.html">About</a>
+                </li>
+                <li class="contact">
+                    <a href="/pages/contact.html">Contact</a>
+                </li>
+                <li class="job">
+                    <a href="/pages/job.html">Jobs</a>
+                </li>
+                <li>
+                    <input class="search" type="search" placeholder="search your dream job.....">
+                   
+
+                </li>
+
+
+                <div class="nav-buttons">
+                    <a href="/pages/login.html" class="signbutton">Sign Up here</a>
+                </div>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <main class="application-form">
+        <h1>Job Application Form</h1>
+        <form action="/submit_application" method="POST">
+            <label for="fullName">Full Name:</label><br />
+            <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+            <label for="email">Email Address:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="phone">Phone Number:</label><br />
+            <input type="tel" id="phone" name="phone" required /><br /><br />
+
+            <label for="jobTitle">Job Title:</label><br />
+            <input type="text" id="jobTitle" name="jobTitle" readonly /><br /><br />
+
+            <label for="location">Job Location:</label><br />
+            <input type="text" id="location" name="location" readonly /><br /><br />
+
+            <label for="experience">Years of Experience:</label><br />
+            <input type="number" id="experience" name="experience" min="0" /><br /><br />
+
+            <label for="resume">Upload Resume:</label><br />
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" /><br /><br />
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+      <footer class="footer">
+    <div class="footer-container">
+       
+        <div class="footer-section">
+            <h4>Contact Us:</h4>
+            <ul>
+                <li>Phone: 9877556644</li>
+                <li>Email: jobsahayatri12@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Social Connect:</h4>
+            <p>
+                <img src="/imgs/facebooklogo.jpeg" height="25" alt="Facebook">
+                Facebook: Job Sahayatri
+            </p>
+            <p>
+                <img src="/imgs/instagramlogo.jpg" height="15" alt="Instagram">
+                Instagram: Job Sahayatri
+            </p>
+        </div>
+
+      
+        <div class="footer-section">
+            <h4>Quick Links:</h4>
+            <ul>
+                <li><a href="/pages/about.html" style="color:white;">About</a></li>
+                <li><a href="/pages/job.html" style="color:white;">Jobs</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="../backend/index.js">
+
+    </script>
+</body>
+
+</html>
