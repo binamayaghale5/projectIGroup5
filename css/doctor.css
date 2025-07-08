@@ -1,0 +1,241 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+/* Navbar */
+.navbar {
+  background-color: #2a3f54;
+  padding: 15px 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo .logo-icon {
+  display: flex;
+  align-items: center;
+  color: #ecf0f1;
+  font-weight: 700;
+  font-size: 1.7rem;
+  cursor: default;
+  user-select: none;
+}
+
+.logo-icon img {
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-menu li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+  background-color: #3d5a7c;
+  outline: none;
+}
+
+.nav-menu li input.search {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-menu li input.search:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2980b9;
+}
+
+.nav-buttons a.signbutton {
+  background-color: #ecf0f1;
+  color: #2a3f54;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.nav-buttons a.signbutton:hover,
+.nav-buttons a.signbutton:focus {
+  background-color: #2980b9;
+  color: white;
+  outline: none;
+}
+
+/* Job detail */
+.job-detail {
+  max-width: 850px;
+  margin: 60px auto 40px;
+  padding: 20px 35px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.job-detail h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #2a3f54;
+  font-weight: 700;
+}
+
+.job-detail p {
+  font-size: 1.15rem;
+  margin-bottom: 28px;
+  color: #505050;
+  font-weight: 500;
+}
+
+.job-listing {
+  display: block;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: #f2f6f9;
+  color: #2a3f54;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.job-listing:hover,
+.job-listing:focus {
+  background-color: #d6e4f0;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.12);
+  outline: none;
+}
+
+.job-listing h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.job-listing p {
+  margin: 3px 0;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  background-color: #2a3f54;
+  color: #ecf0f1;
+  padding: 40px 20px;
+  margin-top: 70px;
+  user-select: none;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 280px;
+}
+
+.footer-section h4 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.footer-section p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.footer-section img {
+  border-radius: 4px;
+}
+
+.footer-section a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .job-detail {
+    padding: 18px 20px;
+    margin: 40px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

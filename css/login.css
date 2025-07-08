@@ -1,0 +1,154 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  user-select: none;
+}
+
+.heading h1#formTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #2a3f54;
+}
+
+.input-type {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-type input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  font-size: 1.1rem;
+  border: 1.8px solid #2980b9;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-type input:focus {
+  border-color: #1b5980;
+  box-shadow: 0 0 8px #2980b9;
+}
+
+.input-type i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2980b9;
+  font-size: 1.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Email field without icon */
+#emailField input {
+  padding-right: 14px;
+}
+
+/* Checkbox and links */
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  color: #2a3f54;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 6px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.checkbox a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.checkbox a:hover,
+.checkbox a:focus {
+  color: #1b5980;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Submit button */
+.submit button#submitBtn {
+  width: 100%;
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 14px 0;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.submit button#submitBtn:hover,
+.submit button#submitBtn:focus {
+  background-color: #1b5980;
+  outline: none;
+}
+
+/* Account toggle text */
+.account {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1rem;
+  color: #2a3f54;
+  user-select: none;
+}
+
+.account a#toggleLink {
+  color: #2980b9;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.account a#toggleLink:hover,
+.account a#toggleLink:focus {
+  color: #1b5980;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
