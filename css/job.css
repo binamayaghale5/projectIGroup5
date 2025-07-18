@@ -101,6 +101,17 @@ body {
   color: white;
   outline: none;
 }
+
+.right-job h1 {
+  text-align: center;
+}
+.right-job p {
+  font-size: larger;
+  text-align: center;
+}
+.right-job h2 {
+  text-align: center;
+}
 /* Available jobs section */
 .available-jobs {
   max-width: 1100px;
