@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Sahayatri Registration</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+  <div class="form-box">
+    <img src="job.jpeg" alt="Logo" class="logo-img">
+    <h2>Job Sahayatri</h2>
+    <p>First step to your professional sucess</p>
+
+    <form method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Name</label>
+        <div class="two-column">
+          <div class="form-group">
+            <input type="text" name="firstName" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="lastName" placeholder="Last name" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Contact Numbers</label>
+        <div class="two-column">
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone number" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="altPhone" placeholder="Alt. number">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Address</label>
+        <div class="two-column">
+          <div class="form-group">
+            <textarea name="permanentAddress" rows="2" placeholder="Permanent Address" required></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="temporaryAddress" rows="2" placeholder="Temporary Address" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Current Employment Status</label>
+        <div class="radio-group">
+          <label><input type="radio" name="employmentStatus" value="employed" required> Employed</label>
+          <label><input type="radio" name="employmentStatus" value="unemployed"> Unemployed</label>
+          <label><input type="radio" name="employmentStatus" value="self-employed"> Self-Employed</label>
+          <label><input type="radio" name="employmentStatus" value="student"> Student</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Desired Pay (in Rupees)</label>
+        <input type="number" name="desiredPay" min="0" placeholder="Initial-price">
+      </div>
+
+      <div class="form-group">
+        <label>Upload Your CV</label>
+        <input type="file" name="cvUpload" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

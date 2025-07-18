@@ -101,80 +101,93 @@ body {
   color: white;
   outline: none;
 }
-
-.right-job h1 {
-  text-align: center;
-}
-.right-job p {
-  font-size: larger;
-  text-align: center;
-}
-.right-job h2 {
-  text-align: center;
-}
 /* Available jobs section */
 .available-jobs {
-  max-width: 1100px;
-  margin: 50px auto 40px;
+  max-width: 900px;
+  margin: 40px auto;
   padding: 0 20px;
-  user-select: none;
+  font-family: sans-serif;
 }
 
-.available-jobs h2 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #2a3f54;
-  margin-bottom: 28px;
-  text-align: center;
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.job-grid {
-  display: grid;
- grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+.job-header h2 {
+  font-size: 1.8rem;
+  color: #1c3b57;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  background: #005a9e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .job-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
-   background-color: rgb(205, 235, 233);
-  padding: 22px 18px;
-  border-radius: 14px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
-  color: #2a3f54;
+  background-color: #f1fafa;
+  border: 1px solid #d0eaea;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
   text-decoration: none;
-  font-weight: 600;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: inherit;
+  transition: background 0.2s ease;
 }
 
-.job-card:hover,
-.job-card:focus {
-  box-shadow: 0 12px 30px rgba(41, 128, 185, 0.35);
-  transform: translateY(-6px);
-  outline: none;
+.job-card:hover {
+  background-color: #e0f5f5;
 }
-
 
 .job-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 14px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
+  margin-right: 20px;
 }
 
-.job-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 8px;
+.job-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.job-card p {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #506070;
-  text-align: center;
+.job-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
 }
+
+.job-info p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.posted-time {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+.job-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+
+
 /* Footer */
 .footer {
   background-color: #2a3f54;
