@@ -51,10 +51,12 @@
                     return;
                 }
 
-                if (username === storedUser.username && password === storedUser.password) {
-                    alert("Login successful!");
-                } else {
+              if (username === storedUser.username && password === storedUser.password) {
+    alert("Login successful!");
+    window.location.href = "../index.html"; // change path if needed
+} else {
                     alert("Incorrect username or password.");
                 }
             }
         });
+        

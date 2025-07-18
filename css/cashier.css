@@ -14,8 +14,6 @@ body {
 }
 
 /* Navbar */
-
-/* Navbar */
 .navbar {
   background-color: #2a3f54;
   padding: 15px 30px;
@@ -101,57 +99,142 @@ body {
   color: white;
   outline: none;
 }
+
 /* Job Detail Section */
-.job-detail {
+.job-detail-container {
   max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 60px auto 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   user-select: none;
 }
 
 .job-detail h1 {
   font-size: 2.5rem;
   color: #2a3f54;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 12px;
   font-weight: 700;
-}
-
-.job-detail p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
   text-align: center;
-  line-height: 1.6;
 }
 
-.job-listing {
-  display: block;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
+.job-detail h3 {
+  font-size: 1.5rem;
+  color: #3d5a7c;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-  color: #2a3f54;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-weight: 600;
 }
 
-.job-listing h3 {
-  font-size: 1.4rem;
+.job-detail p,
+.job-detail ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+.job-detail ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.job-detail ul li {
   margin-bottom: 10px;
 }
 
-.job-listing p {
-  font-size: 1rem;
-  margin: 5px 0;
+.company-header {
+  max-width: 900px;
+  margin: 40px auto 40px auto;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9f0f7;
+  border-radius: 12px;
+  user-select: none;
 }
 
-.job-listing:hover,
-.job-listing:focus {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(41, 128, 185, 0.3);
+.company-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.company-header div {
+  flex: 1;
+}
+
+.company-description {
+  font-size: 1rem;
+  color: #3d5a7c;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.breadcrumb {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  font-size: 0.9rem;
+  color: #2a3f54;
+  user-select: none;
+}
+
+.breadcrumb a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  text-decoration: underline;
   outline: none;
 }
+
+.apply-btn {
+  display: inline-block;
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* for links */
+  margin-top: 15px;
+  text-align: center;
+}
+
+.apply-btn:hover,
+.apply-btn:focus {
+  background-color: #1b5f8a;
+  outline: none;
+}
+
+.hero-button {
+  display: inline-block;
+  color: #2980b9;
+  font-weight: 700;
+  margin-top: 30px;
+  text-decoration: none;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: #1b5f8a;
+  outline: none;
+}
+
 /* Footer */
 .footer {
   background-color: #2a3f54;

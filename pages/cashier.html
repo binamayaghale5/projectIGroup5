@@ -7,7 +7,7 @@
     <title>Job Sahayatri - Find your Dream job</title>
     <link rel="shortcut icon" href="../imgs/ok.png" type="image">
     <!--for creating image/logo in the title inside head of website -->
-    <link rel="stylesheet" href="../css/cashier.css">
+    <link rel="stylesheet" href="../css/jobDetail.css">
 </head>
 
 <body>
@@ -22,16 +22,16 @@
 
             <ul class="nav-menu">
                 <li class="home">
-                    <a href="./index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li class="about">
-                    <a href="./pages/about.html">About</a>
+                    <a href="./about.html">About</a>
                 </li>
                 <li class="contact">
-                    <a href="./pages/contact.html">Contact us</a>
+                    <a href="./contact.html">Contact us</a>
                 </li>
                 <li class="job">
-                    <a href="./pages/job.html">Jobs</a>
+                    <a href="./job.html">Jobs</a>
                 </li>
                 <li>
                     <input class="search" type="search" placeholder="search your dream job.....">
@@ -41,7 +41,7 @@
 
 
                 <div class="nav-buttons">
-                    <a href="./pages/login.html" class="signbutton">Sign Up</a>
+                    <a href="./login.html" class="signbutton">Sign Up</a>
                 </div>
             </ul>
 
@@ -49,37 +49,56 @@
         </div>
     </nav>
 
-  <main class="job-detail">
-    <h1>Cashier Opportunities</h1>
-    <p>Banks and institutions seeking reliable cashiers for financial operations.</p>
+   <!-- Header / Breadcrumb -->
+  <header class="header">
+    <nav class="breadcrumb">
+      <a href="/index.html">Home</a> / <span>Cashier - Everest Bank</span>
+    </nav>
+    <div class="company-header">
+      <img src="../imgs/cashier.png" alt="Cashier Icon" class="company-logo" />
+      <div>
+        <h1>Everest Bank</h1>
+        <p class="company-description">
+          Everest Bank Limited is one of the leading commercial banks in Nepal, providing excellent banking services to
+          its customers with a strong commitment to growth and innovation.
+        </p>
+        <br /><br />
+        <a href="./apply.html" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+  </header>
 
-    <a href="/pages/apply.html?job=Cashier&company=Everest%20Bank&location=Bhaktapur" class="job-listing">
-      <h3>💵 Everest Bank</h3>
-      <p>Location: Bhaktapur</p>
-      <p>Salary: Negotiable</p>
-      <p>Requirement: BBS/BBA, prior cash handling experience</p>
-    </a>
+  <!-- Job Details -->
+  <main class="job-detail-container">
+    <section class="job-detail">
+      <h1>Cashier</h1>
+      <h3>Everest Bank, Bhaktapur</h3>
+      <p><strong>Job Type:</strong> Full-time</p>
+      <p><strong>Experience:</strong> Minimum 1 year of banking or cashier experience</p>
+      <p><strong>Qualification:</strong> Bachelor's degree in Commerce or related field</p>
+      <p><strong>Salary:</strong> NPR 25,000 – 40,000 per month</p>
 
-    <a href="/pages/apply.html?job=Cashier&company=Nepal%20Investment%20Bank&location=Kathmandu" class="job-listing">
-      <h3>💵 Nepal Investment Bank</h3>
-      <p>Location: Kathmandu</p>
-      <p>Salary: Negotiable</p>
-      <p>Requirement: Bachelor’s in finance or related field</p>
-    </a>
+      <h4>Job Description:</h4>
+      <ul>
+        <li>Handle cash transactions efficiently and accurately</li>
+        <li>Maintain cash drawer and balance cash at end of day</li>
+        <li>Provide excellent customer service at the counter</li>
+        <li>Process deposits, withdrawals, and payments</li>
+        <li>Follow bank policies and regulatory requirements</li>
+      </ul>
 
-    <a href="/pages/apply.html?job=Cashier&company=Global%20IME%20Bank&location=Pokhara" class="job-listing">
-      <h3>💵 Global IME Bank</h3>
-      <p>Location: Pokhara</p>
-      <p>Salary: Negotiable</p>
-      <p>Requirement: Experience with digital banking tools</p>
-    </a>
+      <h4>Skills Required:</h4>
+      <ul>
+        <li>Strong numerical and cash handling skills</li>
+        <li>Good communication and interpersonal abilities</li>
+        <li>Attention to detail and ability to work under pressure</li>
+      </ul>
 
-    <a href="/pages/apply.html?job=Cashier&company=Nabil%20Bank&location=Lalitpur" class="job-listing">
-      <h3>💵 Nabil Bank</h3>
-      <p>Location: Lalitpur</p>
-      <p>Salary: Negotiable</p>
-      <p>Requirement: BBS with 1+ year experience</p>
-    </a>
+      <h4>How to Apply:</h4>
+      <p>Send your updated CV to <strong>hr@everestbank.com.np</strong> or apply directly via Job Sahayatri portal.</p>
+
+      <a href="./job.html" class="hero-button">← Back to All Jobs</a>
+    </section>
   </main>
 
       <footer class="footer">

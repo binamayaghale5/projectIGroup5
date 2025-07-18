@@ -7,7 +7,7 @@
     <title>Job Sahayatri - Find your Dream job</title>
     <link rel="shortcut icon" href="../imgs/ok.png" type="image">
     <!--for creating image/logo in the title inside head of website -->
-    <link rel="stylesheet" href="../css/receptionist.css">
+    <link rel="stylesheet" href="../css/jobDetail.css">
 </head>
 
 <body>
@@ -22,16 +22,16 @@
 
             <ul class="nav-menu">
                 <li class="home">
-                    <a href="./index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li class="about">
-                    <a href="./pages/about.html">About</a>
+                    <a href="./about.html">About</a>
                 </li>
                 <li class="contact">
-                    <a href="./pages/contact.html">Contact us</a>
+                    <a href="./contact.html">Contact us</a>
                 </li>
                 <li class="job">
-                    <a href="./pages/job.html">Jobs</a>
+                    <a href="./job.html">Jobs</a>
                 </li>
                 <li>
                     <input class="search" type="search" placeholder="search your dream job.....">
@@ -41,46 +41,66 @@
 
 
                 <div class="nav-buttons">
-                    <a href="./pages/login.html" class="signbutton">Sign Up</a>
+                    <a href="./login.html" class="signbutton">Sign Up</a>
                 </div>
             </ul>
 
 
         </div>
     </nav>
+  <!-- Header / Breadcrumb -->
+  <header class="header">
+    <nav class="breadcrumb">
+      <a href="/index.html">Home</a> / <span>Receptionist - Central Plaza</span>
+    </nav>
+    <div class="company-header">
+      <img src="../imgs/receptionist.png" alt="Receptionist Icon" class="company-logo" />
+      <div>
+        <h1>Central Plaza</h1>
+        <p class="company-description">
+          Central Plaza is a premier commercial complex located in Biratnagar, offering a vibrant working environment with various amenities to support professional growth.
+        </p>
+        <br /><br />
+        <a href="./apply.html" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+  </header>
 
-    <main class="job-detail">
-        <h1>Receptionist Opportunities</h1>
-        <p>Explore receptionist roles in leading businesses across Nepal.</p>
+  <!-- Job Details -->
+  <main class="job-detail-container">
+    <section class="job-detail">
+      <h1>Receptionist</h1>
+      <h3>Central Plaza, Biratnagar</h3>
+      <p><strong>Job Type:</strong> Full-time</p>
+      <p><strong>Experience:</strong> Minimum 1 year of relevant experience</p>
+      <p><strong>Qualification:</strong> Minimum Higher Secondary Certificate (HSC) or equivalent</p>
+      <p><strong>Salary:</strong> NPR 25,000 – 35,000 per month</p>
 
-        <a href="./pages/apply.html?job=Receptionist&company=Hotel%20Paradise&location=Pokhara" class="job-listing">
-            <h3>📞 Hotel Paradise</h3>
-            <p>Location: Pokhara</p>
-            <p>Salary: Negotiable</p>
-            <p>Requirement: Good communication skills, basic computer knowledge</p>
-        </a>
+      <h4>Job Description:</h4>
+      <ul>
+        <li>Manage front desk reception and greet visitors warmly</li>
+        <li>Handle incoming calls and emails professionally</li>
+        <li>Schedule appointments and coordinate meeting rooms</li>
+        <li>Maintain office security and visitor logs</li>
+        <li>Assist with administrative tasks as required</li>
+      </ul>
 
-        <a href="./pages/apply.html?job=Receptionist&company=ABC%20Company&location=Butwal" class="job-listing">
-            <h3>📞 ABC Company</h3>
-            <p>Location: Butwal</p>
-            <p>Salary: Negotiable</p>
-            <p>Requirement: Minimum +2 completed, fluent in English</p>
-        </a>
+      <h4>Skills Required:</h4>
+      <ul>
+        <li>Excellent communication and interpersonal skills</li>
+        <li>Proficiency with MS Office and basic office equipment</li>
+        <li>Organized, punctual, and customer-service oriented</li>
+      </ul>
 
-        <a href="./pages/apply.html?job=Receptionist&company=XYZ%20Office&location=Chitwan" class="job-listing">
-            <h3>📞 XYZ Office</h3>
-            <p>Location: Chitwan</p>
-            <p>Salary: Negotiable</p>
-            <p>Requirement: Friendly demeanor, basic office skills</p>
-        </a>
+      <h4>How to Apply:</h4>
+      <p>
+        Send your updated CV to <strong>hr@centralplaza.com.np</strong> or apply directly via Job Sahayatri portal.
+      </p>
 
-        <a href="./pages/apply.html?job=Receptionist&company=Central%20Plaza&location=Biratnagar" class="job-listing">
-            <h3>📞 Central Plaza</h3>
-            <p>Location: Biratnagar</p>
-            <p>Salary: Negotiable</p>
-            <p>Requirement: Receptionist experience preferred</p>
-        </a>
-    </main>
+      <a href="./job.html" class="hero-button">← Back to All Jobs</a>
+    </section>
+  </main>
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -109,7 +129,7 @@
             <div class="footer-section">
                 <h4>Quick Links:</h4>
                 <ul>
-                <li><a href="./about.html">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li><a href="./job.html">Jobs</a></li>
                     <li> <a href="./our-team.html">Our Team</a></li>
                 </ul>
