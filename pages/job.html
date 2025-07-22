@@ -2,178 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Sahayatri - Find your Dream job</title>
-    <link rel="shortcut icon" href="../imgs/ok.png" type="image">
-    <!--for creating image/logo in the title inside head of website -->
-    <link rel="stylesheet" href="../css/job.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Sahayatri - Find your Dream job</title>
+  <link rel="shortcut icon" href="../imgs/ok.png" type="image">
+  <!--for creating image/logo in the title inside head of website -->
+  <link rel="stylesheet" href="../css/job.css">
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
+  <nav class="navbar">
+    <div class="nav-container">
 
-            <div class="logo">
-                <div class="logo-icon"> <img src="../imgs/ok.png" alt="logo">
-                    Job Sahayatri
-                </div>
-            </div>
-
-            <ul class="nav-menu">
-                <li class="home">
-                    <a href="/index.html">Home</a>
-                </li>
-                <li class="about">
-                    <a href="./about.html">About</a>
-                </li>
-                <li class="contact">
-                    <a href="./contact.html">Contact us</a>
-                </li>
-                <li class="job">
-                    <a href="./job.html">Jobs</a>
-                </li>
-                <li>
-                    <input class="search" type="search" placeholder="search your dream job.....">
-
-
-                </li>
-
-                <li>
-                    <div class="nav-buttons">
-                        <a href="./login.html" class="signbutton">Sign Up</a>
-                    </div>
-                </li>
-            </ul>
-
-
+      <div class="logo">
+        <div class="logo-icon"> <img src="../imgs/ok.png" alt="logo">
+          Job Sahayatri
         </div>
-    </nav>
+      </div>
 
-    <section class="right-job">
-        <h2>Find your ways on clicking the right job for you with us !</h2>
+      <ul class="nav-menu">
+        <li class="home">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="about">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="contact">
+          <a href="./contact.html">Contact us</a>
+        </li>
+        <li class="job">
+          <a href="./job.html">Jobs</a>
+        </li>
+        <li>
+          <input class="search" type="search" placeholder="search your dream job.....">
 
- <section class="available-jobs">
-  <h2>Available Jobs</h2>
 
-  <a href="./doctor.html" class="job-card">
-    <img class="job-logo" src="../imgs/doctor.png" alt="Doctor Logo">
-    <div class="job-info">
-      <h3>Doctor</h3>
-      <p>City Hospital</p>
-      <p>Kathmandu</p>
+        </li>
+
+        <li>
+          <div class="nav-buttons">
+            <a href="./login.html" class="signbutton">Sign Up</a>
+          </div>
+        </li>
+      </ul>
+
+
     </div>
-  </a>
+  </nav>
 
-  <a href="./receptionist.html" class="job-card">
-    <img class="job-logo" src="../imgs/receptionist.png" alt="Receptionist Logo">
-    <div class="job-info">
-      <h3>Receptionist</h3>
-      <p>Central Plaza</p>
-      <p>Biratnagar</p>
-    </div>
-  </a>
+  <section class="right-job">
+    <h2 style="text-align: center; font-size: 1.8rem;">Find your ways on clicking the right job for you with us !</h2>
+    <div class="job-filter">
+      <div class="right" style="display: flex; justify-content: flex-end; margin-right: 20px;">
 
-  <a href="./cashier.html" class="job-card">
-    <img class="job-logo" src="../imgs/cashier.png" alt="Cashier Logo">
-    <div class="job-info">
-      <h3>Cashier</h3>
-      <p>Everest Bank</p>
-      <p>Bhaktapur</p>
-    </div>
-  </a>
+        <button style="cursor: pointer; align-items: right;">Filter Jobs</button>
+      </div>
+      <label for="location">Location:</label>
+      <select id="location">
+        <option value="all">All</option>
+        <option value="Kathmandu">Kathmandu</option>
+        <option value="Biratnagar">Biratnagar</option>
+        <option value="Bhaktapur">Bhaktapur</option>
+        <option value="Chitwan">Chitwan</option>
+        <option value="Pokhara">Pokhara</option>
+        <option value="Lalitpur">Lalitpur</option>
+      </select>
 
-  <a href="./accountant.html" class="job-card">
-    <img class="job-logo" src="../imgs/accountant.png" alt="Accountant Logo">
-    <div class="job-info">
-      <h3>Accountant</h3>
-      <p>Elite Group</p>
-      <p>Chitwan</p>
+      <label for="category">Job Title:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Receptionist">Receptionist</option>
+        <option value="Cashier">Cashier</option>
+        <option value="Accountant">Accountant</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Customer Service">Customer Service</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Marketing Executive">Marketing Executive</option>
+        <option value="Software Developer">Software Developer</option>
+      </select>
     </div>
-  </a>
 
-  <a href="./teacher.html" class="job-card">
-    <img class="job-logo" src="../imgs/teacher.png" alt="Teacher Logo">
-    <div class="job-info">
-      <h3>Teacher</h3>
-      <p>Malpi International School</p>
-      <p>Kathmandu</p>
-    </div>
-  </a>
 
-  <a href="./customer-service.html" class="job-card">
-    <img class="job-logo" src="../imgs/customer-service.png" alt="Customer Service Logo">
-    <div class="job-info">
-      <h3>Customer Service</h3>
-      <p>CallCare Support</p>
-      <p>Kathmandu</p>
-    </div>
-  </a>
+    <section class="available-jobs">
+      <h2>Available Jobs</h2>
 
-  <a href="./graphic-designer.html" class="job-card">
-    <img class="job-logo" src="../imgs/graphic-designer.png" alt="Graphic Designer Logo">
-    <div class="job-info">
-      <h3>Graphic Designer</h3>
-      <p>Creative Studio</p>
-      <p>Pokhara</p>
-    </div>
-  </a>
+      <a href="./doctor.html" class="job-card">
+        <img class="job-logo" src="../imgs/doctor.png" alt="Doctor Logo">
+        <div class="job-info">
+          <h3>Doctor</h3>
+          <p>City Hospital</p>
+          <p>Kathmandu</p>
+        </div>
+      </a>
 
-  <a href="./marketing-executive.html" class="job-card">
-    <img class="job-logo" src="../imgs/marketing-executive.png" alt="Marketing Executive Logo">
-    <div class="job-info">
-      <h3>Marketing Executive</h3>
-      <p>Bright Marketing</p>
-      <p>Lalitpur</p>
-    </div>
-  </a>
+      <a href="./receptionist.html" class="job-card">
+        <img class="job-logo" src="../imgs/receptionist.png" alt="Receptionist Logo">
+        <div class="job-info">
+          <h3>Receptionist</h3>
+          <p>Central Plaza</p>
+          <p>Biratnagar</p>
+        </div>
+      </a>
 
-  <a href="./software-developer.html" class="job-card">
-    <img class="job-logo" src="../imgs/software-developer.png" alt="Software Developer Logo">
-    <div class="job-info">
-      <h3>Software Developer</h3>
-      <p>Innovatech Solutions</p>
-      <p>Kathmandu</p>
-    </div>
-  </a>
-</section>
+      <a href="./cashier.html" class="job-card">
+        <img class="job-logo" src="../imgs/cashier.png" alt="Cashier Logo">
+        <div class="job-info">
+          <h3>Cashier</h3>
+          <p>Everest Bank</p>
+          <p>Bhaktapur</p>
+        </div>
+      </a>
+
+      <a href="./accountant.html" class="job-card">
+        <img class="job-logo" src="../imgs/accountant.png" alt="Accountant Logo">
+        <div class="job-info">
+          <h3>Accountant</h3>
+          <p>Elite Group</p>
+          <p>Chitwan</p>
+        </div>
+      </a>
+
+      <a href="./teacher.html" class="job-card">
+        <img class="job-logo" src="../imgs/teacher.png" alt="Teacher Logo">
+        <div class="job-info">
+          <h3>Teacher</h3>
+          <p>Malpi International School</p>
+          <p>Kathmandu</p>
+        </div>
+      </a>
+
+      <a href="./customer-service.html" class="job-card">
+        <img class="job-logo" src="../imgs/customer-service.png" alt="Customer Service Logo">
+        <div class="job-info">
+          <h3>Customer Service</h3>
+          <p>CallCare Support</p>
+          <p>Kathmandu</p>
+        </div>
+      </a>
+
+      <a href="./graphic-designer.html" class="job-card">
+        <img class="job-logo" src="../imgs/graphic-designer.png" alt="Graphic Designer Logo">
+        <div class="job-info">
+          <h3>Graphic Designer</h3>
+          <p>Creative Studio</p>
+          <p>Pokhara</p>
+        </div>
+      </a>
+
+      <a href="./marketing-executive.html" class="job-card">
+        <img class="job-logo" src="../imgs/marketing-executive.png" alt="Marketing Executive Logo">
+        <div class="job-info">
+          <h3>Marketing Executive</h3>
+          <p>Bright Marketing</p>
+          <p>Lalitpur</p>
+        </div>
+      </a>
+
+      <a href="./software-developer.html" class="job-card">
+        <img class="job-logo" src="../imgs/software-developer.png" alt="Software Developer Logo">
+        <div class="job-info">
+          <h3>Software Developer</h3>
+          <p>Innovatech Solutions</p>
+          <p>Kathmandu</p>
+        </div>
+      </a>
+    </section>
 
 
 
     <footer class="footer">
-        <div class="footer-container">
+      <div class="footer-container">
 
-            <div class="footer-section">
-                <h4>Contact Us:</h4>
-                <ul>
-                    <li>Phone: 9877556644</li>
-                    <li>Email: jobsahayatri12@gmail.com</li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Social Connect:</h4>
-                <p>
-                    <img src="../imgs/facebooklogo.jpeg" height="25" alt="Facebook">
-                    Facebook: Job Sahayatri
-                </p>
-                <p>
-                    <img src="../imgs/instagramlogo.jpg" height="15" alt="Instagram">
-                    Instagram: Job Sahayatri
-                </p>
-            </div>
-
-
-            <div class="footer-section">
-                <h4>Quick Links:</h4>
-                <ul>
-                  <li><a href="./about.html">About</a></li>
-                    <li><a href="./job.html">Jobs</a></li>
-                    <li> <a href="./our-team.html">Our Team</a></li>
-                </ul>
-            </div>
+        <div class="footer-section">
+          <h4>Contact Us:</h4>
+          <ul>
+            <li>Phone: 9877556644</li>
+            <li>Email: jobsahayatri12@gmail.com</li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h4>Social Connect:</h4>
+          <p>
+            <img src="../imgs/facebooklogo.jpeg" height="25" alt="Facebook">
+            Facebook: Job Sahayatri
+          </p>
+          <p>
+            <img src="../imgs/instagramlogo.jpg" height="15" alt="Instagram">
+            Instagram: Job Sahayatri
+          </p>
+        </div>
+
+
+        <div class="footer-section">
+          <h4>Quick Links:</h4>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./job.html">Jobs</a></li>
+            <li> <a href="./our-team.html">Our Team</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <script>
+      const locationFilter = document.getElementById('location');
+      const categoryFilter = document.getElementById('category');
+      const jobCards = document.querySelectorAll('.job-card');
+
+      function filterJobs() {
+        const selectedLocation = locationFilter.value;
+        const selectedCategory = categoryFilter.value;
+
+        jobCards.forEach(card => {
+          const title = card.querySelector('h3').textContent.trim();
+          const location = card.querySelectorAll('p')[1].textContent.trim();
+
+          const matchLocation = selectedLocation === 'all' || selectedLocation === location;
+          const matchCategory = selectedCategory === 'all' || selectedCategory === title;
+
+          if (matchLocation && matchCategory) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+  
+      locationFilter.addEventListener('change', filterJobs);
+      categoryFilter.addEventListener('change', filterJobs);
+    </script>
 
     <script src="../backend/jobsearch.js">
 
