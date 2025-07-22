@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
@@ -198,14 +198,12 @@ body {
 .job-filter {
   margin: 20px 0;
   padding: 15px 20px;
-  /* background: #f1f5f9; */
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   align-items: center;
   justify-content: flex-end;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); */
 }
 
 .job-filter label {
