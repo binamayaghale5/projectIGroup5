@@ -15,7 +15,7 @@
     <h2>Job Sahayatri</h2>
     <p>First step to your professional sucess</p>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form id="registrationForm" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label>Name</label>
         <div class="two-column">
@@ -94,6 +94,46 @@
     </form>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // 1. Set today's date as max for DOB
+      var today = new Date().toISOString().split("T")[0];
+      $('input[name="dob"]').attr('max', today);
+
+      // 2. Age validation when DOB is selected
+      $('input[name="dob"]').change(function () {
+        var dob = new Date($(this).val());
+        var today = new Date();
+
+        var age = today.getFullYear() - dob.getFullYear();
+        var m = today.getMonth() - dob.getMonth();
+
+        if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+          age--;
+        }
+
+        if (age < 18) {
+          alert("You must be at least 18 years old to register.");
+          $(this).val(""); // Clear input
+        } else {
+          alert("Age valid. You are " + age + " years old.");
+        }
+      });
+
+      // 3. Handle form submission and redirect
+      $('#registrationForm').submit(function (e) {
+        e.preventDefault(); // Prevent real submission
+
+        alert("Form submitted successfully!");
+
+        // Redirect after 1 second
+        setTimeout(function () {
+          window.location.href = "/index.html";
+        }, 1000);
+      });
+    });
+  </script>
 </body>
 
 </html>
